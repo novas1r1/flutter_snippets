@@ -1,7 +1,7 @@
 include: package:lint/strict.yaml
 
 analyzer:
-  exclude: [build/**]
+  exclude: [build/**, lib/**/*.g.dart]
 
 linter:
   rules:
@@ -11,7 +11,11 @@ linter:
 dart_code_metrics:
   extends:
     - package:dart_code_metrics_presets/all.yaml
+  exclude: ["lib/**/*.g.dart"]
   rules:
+    # enabled
+    - list-all-equatable-fields: true
+    # disabled
     - unnecessary-trailing-comma: false
     - format-comment: false
     - avoid-shadowing: false
