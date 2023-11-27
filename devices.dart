@@ -14,14 +14,23 @@ class Device {
     this.safeArea = EdgeInsets.zero,
   });
 
+  static List<Device> storeDeviceList = [
+    Device.storeSmallPhone,
+    Device.storeAndroidPhone,
+    Device.storeIphone8Plus,
+    Device.storeIphoneXSMax,
+  ];
+
   /// [smallPhone] one of the smallest phone screens
-  static const Device storeSmallPhone =
-      Device(name: 'small_phone', size: Size(375, 667));
+  static const storeSmallPhone = Device(
+    name: 'small_phone',
+    size: Size(375, 667),
+  );
 
   // from here: https://medium.com/@mregnauld/generate-screenshots-for-a-flutter-app-with-golden-testing-and-upload-them-to-the-stores-1-2-45f8df777aef
 
   /// Android smartphone: 1107 x 1968 (density: 3)
-  static const Device storeAndroidPhone = Device(
+  static const storeAndroidPhone = Device(
     name: 'android_phone',
     size: Size(1107 / 2, 1968 / 2),
     devicePixelRatio: 2,
@@ -29,7 +38,7 @@ class Device {
   );
 
   /// 7 inches Android tablet: 1206 x 2144 (density: 2)
-  static const Device storeAndroidTablet7 = Device(
+  static const storeAndroidTablet7 = Device(
     name: 'android_tablet_7',
     size: Size(1206 / 2, 2144 / 2),
     devicePixelRatio: 2,
@@ -46,7 +55,7 @@ class Device {
 
   /// iPad pro 2nd gen: 2048 x 2732 (density: 2)
   /// iPad pro 6th gen: 2048 x 2732 (density: 2)
-  static const Device storeIpad2ndGen = Device(
+  static const storeIpad2ndGen = Device(
     name: 'ipad_2nd_gen',
     size: Size(2048 / 2, 2732 / 2),
     devicePixelRatio: 2,
@@ -54,7 +63,7 @@ class Device {
   );
 
   /// iPhone 8 Plus: 1242 x 2208 (density: 3)
-  static const Device storeIphone8Plus = Device(
+  static const storeIphone8Plus = Device(
     name: 'iphone_8_plus',
     size: Size(1242 / 3, 2208 / 3),
     devicePixelRatio: 3,
@@ -70,25 +79,29 @@ class Device {
   );
 
   /// [iphone11] matches specs of iphone11, but with lower DPI for performance
-  static const Device iphone11 = Device(
+  static const iphone11 = Device(
     name: 'iphone11',
     size: Size(414, 896),
     safeArea: EdgeInsets.only(top: 44, bottom: 34),
   );
 
-  static const Device iphone11Landscape = Device(
+  static const iphone11Landscape = Device(
     name: 'iphone11_landscape',
     size: Size(896, 414),
     safeArea: EdgeInsets.only(left: 44, right: 34),
   );
 
   /// [tabletLandscape] example of tablet that in landscape mode
-  static const Device tabletLandscape =
-      Device(name: 'tablet_landscape', size: Size(1366, 1024));
+  static const tabletLandscape = Device(
+    name: 'tablet_landscape',
+    size: Size(1366, 1024),
+  );
 
   /// [tabletPortrait] example of tablet that in portrait mode
-  static const Device tabletPortrait =
-      Device(name: 'tablet_portrait', size: Size(1024, 1366));
+  static const Device tabletPortrait = Device(
+    name: 'tablet_portrait',
+    size: Size(1024, 1366),
+  );
 
   /// [name] specify device name. Ex: Phone, Tablet, Watch
   final String name;
