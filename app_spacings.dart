@@ -38,6 +38,12 @@ abstract class AppSpacings {
   static const l16 = EdgeInsets.only(left: 16);
   static const l24 = EdgeInsets.only(left: 24);
 
+  /// right
+  static const r4 = EdgeInsets.only(right: 4);
+  static const r8 = EdgeInsets.only(right: 8);
+  static const r16 = EdgeInsets.only(right: 16);
+  static const r24 = EdgeInsets.only(right: 24);
+
   /// SizedBox
   /// height
   static const sbh4 = SizedBox(height: 4);
