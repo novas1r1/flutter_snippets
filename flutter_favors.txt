@@ -1,0 +1,50 @@
+Github Issue: 
+https://github.com/SharezoneApp/sharezone-app/pull/1078
+
+flutterfire configure \
+  --project=sharezone-debug \
+  --platforms=macos \
+  --out=lib/firebase_options_dev.g.dart \
+  --macos-build-config=Debug-dev \
+  --macos-out=macos/config/dev \
+  --macos-bundle-id=de.codingbrain.sharezone.app.dev
+
+flutterfire configure \
+  --project=sharezone-debug \
+  --platforms=macos \
+  --out=lib/firebase_options_dev.g.dart \
+  --macos-build-config=Profile-dev \
+  --macos-out=macos/config/dev \
+  --macos-bundle-id=de.codingbrain.sharezone.app.dev
+
+flutterfire configure \
+  --project=sharezone-debug \
+  --platforms=macos \
+  --out=lib/firebase_options_dev.g.dart \
+  --macos-build-config=Release-dev \
+  --macos-out=macos/config/dev \
+  --macos-bundle-id=de.codingbrain.sharezone.app.dev
+
+flutterfire configure \
+  --project=sharezone-c2bd8 \
+  --platforms=macos \
+  --out=lib/firebase_options_prod.g.dart \
+  --macos-build-config=Debug-prod \
+  --macos-out=macos/config/prod \
+  --macos-bundle-id=de.codingbrain.sharezone.app
+
+flutterfire configure \
+  --project=sharezone-c2bd8 \
+  --platforms=macos \
+  --out=lib/firebase_options_prod.g.dart \
+  --macos-build-config=Profile-prod \
+  --macos-out=macos/config/prod \
+  --macos-bundle-id=de.codingbrain.sharezone.app
+
+flutterfire configure \
+  --project=sharezone-c2bd8 \
+  --platforms=macos \
+  --out=lib/firebase_options_prod.g.dart \
+  --macos-build-config=Release-prod \
+  --macos-out=macos/config/prod \
+  --macos-bundle-id=de.codingbrain.sharezone.app
