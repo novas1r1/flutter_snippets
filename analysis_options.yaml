@@ -56,5 +56,7 @@ dart_code_metrics:
     - avoid-negated-conditions: false
     - avoid-similar-names: false
     - prefer-unique-test-names: false
+    - prefer-getter-over-method: false
+    - no-equal-arguments: false
     # TODO enable as soon as time
     - prefer-test-matchers: false
