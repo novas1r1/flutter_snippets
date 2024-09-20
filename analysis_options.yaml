@@ -11,7 +11,6 @@ linter:
 dart_code_metrics:
   extends:
     - package:dart_code_metrics_presets/all.yaml
-  exclude: ["lib/**/*.g.dart"]
   rules:
     # enabled
     - list-all-equatable-fields: true
@@ -58,5 +57,9 @@ dart_code_metrics:
     - prefer-unique-test-names: false
     - prefer-getter-over-method: false
     - no-equal-arguments: false
+    - avoid-returning-cascades: false
+    - avoid-dynamic: false
+    - no-magic-string: false
+    - prefer-static-class: false
     # TODO enable as soon as time
     - prefer-test-matchers: false
