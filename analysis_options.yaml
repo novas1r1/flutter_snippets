@@ -61,5 +61,6 @@ dart_code_metrics:
     - avoid-dynamic: false
     - no-magic-string: false
     - prefer-static-class: false
+    - prefer-correct-handler-name: false
     # TODO enable as soon as time
     - prefer-test-matchers: false
