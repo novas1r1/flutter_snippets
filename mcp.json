@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "dart": {
+      "command": "dart",
+      "args": [
+        "mcp-server",
+        "--force-roots-fallback"
+      ]
+    },
+    "flutter": {
+      "command": "flutter",
+      "args": [
+        "mcp-server",
+        "--force-roots-fallback"
+      ]
+    },
+    "supabase": {
+      "command": "supabase",
+      "args": [
+        "mcp-server",
+        "--force-roots-fallback"
+      ]
+    }
+  }
+}
