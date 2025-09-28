@@ -1,4 +1,4 @@
-.PHONY: generate watch test translations firebase-android talkback fontsize
+.PHONY: podfix generate watch test clean get talkback fontsize-xs fontsize-m fontsize-xl appbundle-dev run-dev run-prod build-apk build-ios analyze format upgrade outdated doctor icons splash
 
 # go to ios folder, delete the podfile.lock and run pod install
 podfix: 
@@ -33,3 +33,42 @@ fontsize-xl:
 
 appbundle-dev:
 	flutter build appbundle --flavor dev
+
+# Run commands
+run-dev:
+	flutter run --flavor dev --debug
+
+run-prod:
+	flutter run --release
+
+# Build commands
+build-apk:
+	flutter build apk --release
+
+build-ios:
+	flutter build ios --release
+
+# Code quality commands
+analyze:
+	flutter analyze
+
+format:
+	dart format .
+
+# Dependency management
+upgrade:
+	flutter pub upgrade
+
+outdated:
+	flutter pub outdated
+
+# Flutter tooling
+doctor:
+	flutter doctor
+
+# Asset generation
+icons:
+	dart run flutter_launcher_icons
+
+splash:
+	dart run flutter_native_splash:create
